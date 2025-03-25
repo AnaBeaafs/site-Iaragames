@@ -29,6 +29,7 @@
 
 html{
     font-size: 62,5%;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -465,3 +466,22 @@ nav a:hover{
 
 }
 /* -------------------------------------------- */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 30px;
+    background-color: var(--primary-color); 
+    color: white;
+    padding: 10px; 
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+.scroll-to-top:hover {
+    background-color: var(--tertiary-color); 
+}
+/* -------------------------------------------- */
+
