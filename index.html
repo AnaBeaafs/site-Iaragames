@@ -16,151 +16,161 @@
 </head>
 <body>
     <!-- -------------início menu---------------------->
-    <nav class="navbar">
-        <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#destaque">Destaques</a></li>
-            <li><a href="#jogos">Jogos</a></li>
-            <li><a href="./pages/acessibilidade.html">Acessibilidade</a></li>
-        </ul>
-    </nav>
-    <!-- -----------------fim meu---------------------->
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#destaque">Destaques</a></li>
+                <li><a href="#jogos">Jogos</a></li>
+                <li><a href="./pages/acessibilidade.html">Acessibilidade</a></li>
+                <li><a href="./pages/forms.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+        <!-- -------------Fim menu---------------------->
     
     <!-- --------------inicio hero--------------------->
-    <div class="hero" id="hero">
-        <div class="hero-cont">
-            <h2>Iara Games</h2>
-            <p>Tudo sobre os melhores jogos</p>
-            <a href="#jogos" class="bnt">Conhecer jogos</a>
-        </div>
-    </div>
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <h2>Iara Games</h2>
+                <p>Tudo sobre os melhores jogos</p>
+                <a href="#jogos" class="bnt">Conhecer jogos</a>
+            </div>
+        </section>
+    </main>
     <!-- --------------fim hero----------------------->
 
     <!-- --------------início sobre----------------------->
-    <div class="about" id="about">
-        <div class="cont-about1">
+    <section class="about" id="about">
+        <div class="content-about1">
             <div class="text-about">
                 <h2 class="h2">O que somos?</h2>
-                <p class="p">Somos uma plataforma especializada em listar e analisar os melhores jogos, com um compromisso firme de promover a acessibilidade e a inclusão, garantindo que todos os jogadores tenham uma experiência enriquecedora.</p>
+                <p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui tempora quam quibusdam eum? Impedit, repudiandae mollitia delectus quidem dolores quaerat.</p>
             </div>
         </div>
-
-        <div class="cont-about2"></div>
-
-        <div class="cont-about3">
+        <div class="content-about2">
             <div class="text-about">
                 <h2 class="h2">Nosso objetivo</h2>
-                <p class="p">Nosso objetivo é fornecer informações detalhadas sobre jogos, destacando suas funcionalidades de acessibilidade, para garantir que todos, independentemente de suas habilidades, possam aproveitar cada jogo.</p>
+                <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut architecto doloremque commodi! Enim, accusantium libero consequuntur earum nihil voluptatem perspiciatis.</p>
             </div>
         </div>
-    </div>   
+    </section>   
     <!-- --------------fim sobre----------------------->
 
-    <!-- --------------inicio card-------------------->
-    <h2 class="title-game" id="destaque">Destaques do ano</h2>
-    <p class="subtitle-game">Aqui vocês encontra os jogos mais acessados de 2025</p>
-
-    <div class="cont-card">
-
-        <div class="card-itens">
-            <img src="./img/destaque1" alt="controle de jogo">
-            <h3 class="h3card">Lorem</h3>
-            <p class="pcard">Lorem ipsum dolor sit amet.</p>
-            <a href="" class="bnt2">Conhecer mais</a>
+    <!-- --------------inicio Games Destaques-------------------->
+    <section class="games-destaques">
+        <h2 class="title-game" id="destaque">Destaques do ano</h2>
+        <p class="subtitle-game">Aqui vocês encontra os jogos mais acessados de 2025</p>
+        <div class="content-card-games-destaques">
+            <div class="card-itens">
+                <img src="./img/destaque1.jpg" alt="controle de jogo">
+                <h3 class="h3card">Lorem</h3>
+                <p class="pcard">Lorem ipsum dolor sit amet.</p>
+                <a href="" class="bnt-rosa">Conhecer mais</a>
+            </div>
+            <div class="card-itens">
+                <img src="./img/destaque2.jpg" alt="homem jogando">
+                <h3 class="h3card">Lorem</h3>
+                <p class="pcard">Lorem ipsum dolor sit amet.</p>
+                <a href="" class="bnt-rosa">Conhecer mais</a>
+            </div>
+            <div class="card-itens">
+                <img src="./img/destaque3.jpeg" alt="jogo no computador">
+                <h3 class="h3card">Lorem</h3>
+                <p class="pcard">Lorem ipsum dolor sit amet.</p>
+                <a href="" class="bnt-rosa">Conhecer mais</a>
+            </div>
         </div>
-        <div class="card-itens">
-            <img src="./img/destaque2.jpg" alt="homem jogando">
-            <h3 class="h3card">Lorem</h3>
-            <p class="pcard">Lorem ipsum dolor sit amet.</p>
-            <a href="" class="bnt2">Conhecer mais</a>
-        </div>
-        <div class="card-itens">
-            <img src="./img/destaque3.jpeg" alt="jogo no computador">
-            <h3 class="h3card">Lorem</h3>
-            <p class="pcard">Lorem ipsum dolor sit amet.</p>
-            <a href="" class="bnt2">Conhecer mais</a>
-        </div>
-    </div>
-    <!-- --------------fim card----------------------->
+    </section>
+    <!-- --------------fim Games Destaques----------------------->
 
     <!-- --------------início acessibilidade----------------------->
-    <div class="cont-acessibilidade">
+    <section class="content-acessibilidade">
         <div class="acessibilidade">
             <h2>Acessibilidade nos games</h2>
             <p>Como a acessibilidade está presente nos jogos?</p>
-            <a href="./pages/acessibilidade.html" class="bnt2">Conhecer</a>
+            <a href="./pages/acessibilidade.html" class="bnt-rosa">Conhecer</a>
         </div>
-    </div>
+    </section>
 
     <!-- --------------fim acessibilidade----------------------->
 
     <!-- ----------------início cards-jogos------------- -->
-    <div class="cont-game" id="jogos">
-        <h2 class="title-games">Conheça os melhores jogos para se jogar em seu dispositivo </h2>
-        <div class="cont-cards">
-            <img src="./img/game1.jpg" alt="jogo no computador">
-            <h3 class="h3card">Lorem</h3>
-            <p class="pcard">Lorem ipsum dolor sit amet.</p>
-            <a href="" class="bnt">Conhecer mais</a>
-        </div>
-        <div class="cont-cards">
-            <img src="./img/game2.jpg" alt="2 amigos jogando video-game">
-            <h3 class="h3card">Lorem</h3>
-            <p class="pcard">Lorem ipsum dolor sit amet.</p>
-            <a href="" class="bnt">Conhecer mais</a>
-        </div>
-        <div class="cont-cards">
-            <img src="./img/game3.jpg" alt="itens do jogo do super Mário e um computador">
-            <h3 class="h3card">Lorem</h3>
-            <p class="pcard">Lorem ipsum dolor sit amet.</p>
-            <a href="" class="bnt">Conhecer mais</a>
-        </div>
-        <div class="cont-cards">
-            <img src="./img/game4.jpg" alt="Controle de vídeo-game em frente a uma tv">
-            <h3 class="h3card">Lorem</h3>
-            <p class="pcard">Lorem ipsum dolor sit amet.</p>
-            <a href="" class="bnt">Conhecer mais</a>
-        </div>
-        <div class="cont-cards">
-            <img src="./img/game5.jpg" alt="Homem jogando no pc">
-            <h3 class="h3card">Lorem</h3>
-            <p class="pcard">Lorem ipsum dolor sit amet.</p>
-            <a href="" class="bnt">Conhecer mais</a>
-        </div>
-        <div class="cont-cards">
-            <img src="./img/game6.jpg" alt="Homem sorrindo e jogando em frente ao pc">
-            <h3 class="h3card">Lorem</h3>
-            <p class="pcard">Lorem ipsum dolor sit amet.</p>
-            <a href="" class="bnt">Conhecer mais</a>
-        </div>
-        <div class="cont-cards">
-            <img src="./img/game7.jpg" alt="vários pc's gamers">
-            <h3 class="h3card">Lorem</h3>
-            <p class="pcard">Lorem ipsum dolor sit amet.</p>
-            <a href="" class="bnt">Conhecer mais</a>
-        </div>
-        <div class="cont-cards">
-            <img src="./img/game8.jpg" alt="Homem jogando em frente ao pc">
-            <h3 class="h3card">Lorem</h3>
-            <p class="pcard">Lorem ipsum dolor sit amet.</p>
-            <a href="" class="bnt">Conhecer mais</a>
-        </div>
-        <div class="cont-cards">
-            <img src="./img/game9.jpg" alt="Homem jogando em frente ao pc">
-            <h3 class="h3card">Lorem</h3>
-            <p class="pcard">Lorem ipsum dolor sit amet.</p>
-            <a href="" class="bnt">Conhecer mais</a>
-        </div>
-    </div>
-    <a href="#top" class="scroll-to-top">&#8593;</a>
+    <article>
+        <section class="games" id="jogos">
+            <h2 class="title-game2">Os melhores jogos 2025</h2>
+            <div class="content-card-games">
+                <div class="card-itens2">
+                    <img src="./img/game1.jpg" alt="jogo no computador">
+                    <h3 class="h3card">Lorem</h3>
+                    <p class="pcard">Lorem ipsum dolor sit amet.</p>
+                    <a href="" class="bnt">Conhecer mais</a></div>
+                <div class="card-itens2">
+                        <img src="./img/game2.jpg" alt="2 amigos jogando video-game">
+                    <h3 class="h3card">Lorem</h3>
+                    <p class="pcard">Lorem ipsum dolor sit amet.</p>
+                    <a href="" class="bnt">Conhecer mais</a></div>
+                <div class="card-itens2">
+                    <img src="./img/game3.jpg" alt="itens do jogo do super Mário e um computador">
+                    <h3 class="h3card">Lorem</h3>
+                    <p class="pcard">Lorem ipsum dolor sit amet.</p>
+                    <a href="" class="bnt">Conhecer mais</a></div>
+                <div class="card-itens2">
+                        <img src="./img/game4.jpg" alt="Controle de vídeo-game em frente a uma tv">
+                    <h3 class="h3card">Lorem</h3>
+                    <p class="pcard">Lorem ipsum dolor sit amet.</p>
+                    <a href="" class="bnt">Conhecer mais</a></div>
+                <div class="card-itens2">
+                        <img src="./img/game5.jpg" alt="Homem jogando no pc">
+                    <h3 class="h3card">Lorem</h3>
+                    <p class="pcard">Lorem ipsum dolor sit amet.</p>
+                    <a href="" class="bnt">Conhecer mais</a></div>
+                <div class="card-itens2">
+                        <img src="./img/game6.jpg" alt="Homem sorrindo e jogando em frente ao pc">
+                    <h3 class="h3card">Lorem</h3>
+                    <p class="pcard">Lorem ipsum dolor sit amet.</p>
+                    <a href="" class="bnt">Conhecer mais</a></div>
+                <div class="card-itens2">
+                        <img src="./img/game7.jpg" alt="vários pc's gamers">
+                    <h3 class="h3card">Lorem</h3>
+                    <p class="pcard">Lorem ipsum dolor sit amet.</p>
+                    <a href="" class="bnt">Conhecer mais</a></div>
+                <div class="card-itens2">
+                        <img src="./img/game8.jpg" alt="Homem jogando em frente ao pc">
+                    <h3 class="h3card">Lorem</h3>
+                    <p class="pcard">Lorem ipsum dolor sit amet.</p>
+                    <a href="" class="bnt">Conhecer mais</a>
+                </div>
+            </div>
+        </section>
+    </article>
     <!-- ----------------fim cards-jogos------------- -->
+
+    <!-- ----------------Início âncora------------- -->
+    <button href="#top" class="scroll-to-top">&#8593;</button>
+    <!-- ----------------fim âncora------------- -->
+
     <!-- ----------------início rodapé------------- -->
-    <div class="rodape">
+    <footer class="rodape">
         <div class="text-rodape">
             <h4>© Aninha - Todos os direitos reservados.</h4>
         </div>
-    </div>
+    </footer>
     <!-- ----------------fim rodapé------------- -->
+    <!-- VLibras Widget -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+<!--Fim VLibras Widget -->
+
 </body>
 </html> 
