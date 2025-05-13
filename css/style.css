@@ -3,9 +3,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Tektur", sans-serif;
+
+
+}
+* h1 h2 h3 {
+    font-family: "Alegreya SC", serif;
 }
 
+* p {
+    font-family: "Tektur", sans-serif;
+}
 .bytesized-regular {
     font-family: "Tektur", sans-serif;
     font-weight: 400;
@@ -19,6 +27,7 @@
     font-style: normal;
     font-variation-settings: "wdth" 100;
 }
+
 
 /* Variáveis */
 :root {
@@ -47,18 +56,6 @@ a:focus, button:focus {
     outline-offset: 4px;
 }
 
-/* Tipografia */
-.p, .pcard, .conteudo-p {
-    font-size: clamp(1rem, 1.5vw, 1.8rem);
-    margin-top: 1vw;
-    font-family: "Tektur", sans-serif;
-}
-
-.h2, .conteudo-h2 {
-    font-size: clamp(2rem, 3vw, 4rem);
-    font-family: "Tektur", sans-serif;
-}
-
 /* Header */
 .header {
     background-color: var(--primary-color);
@@ -69,6 +66,14 @@ a:focus, button:focus {
     top: 0;
     left: 0;
     width: 100%;
+}
+
+.logo{
+    margin-right: 1vw;
+}
+
+.contact{
+    margin:0;
 }
 
 .header ul {
@@ -82,7 +87,6 @@ a:focus, button:focus {
     padding: 1rem;
     font-size: clamp(1rem, 1.5vw, 1.5rem);
     text-decoration: none;
-    font-family: "Tektur", sans-serif;
 }
 
 .header a:hover {
@@ -90,6 +94,76 @@ a:focus, button:focus {
     color: var(--tertiary-color);
     transition: 0.2s;
 }
+
+/* Formulário */
+.forms {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 10vw;
+}
+
+.forms h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #333;
+}
+
+input,
+textarea {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+textarea {
+    resize: none;
+    min-height: 100px;
+
+}
+
+input[required],
+textarea[required] {
+    border-left: 4px solid var(--tertiary-color);
+}
+
+button {
+    padding: 1rem;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--neutra-color);
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover,
+button:focus {
+    background: linear-gradient(to right, #efa9db, #F85ACA);
+}
+
 
 /* Hero */
 #hero {
@@ -99,39 +173,37 @@ a:focus, button:focus {
 .hero {
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(4, 9, 30, .3), rgba(18, 4, 30, 0.9)), url(../img/jogo-hero.jpg);
-    background-position: center;
+    background-image: linear-gradient(rgba(4, 9, 30, .3), rgba(18, 4, 30, 0.9)), url(../img/banner-sobre.png);
+    background-position:left;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
     transition: 2s;
+    display: flex;
+
 }
 
 .hero-content {
-    padding: 17rem 3rem;
-    align-items: center;
+    align-content: center;
+    margin-left: 2vw;
+}
+
+.hero-content h1, .hero-cont2 h1 {
+    color: var(--tertiary-color);
+    transition: var(--transition);
+    font-size: clamp(3rem, 4vw, 5rem);
+    font-weight: 800;
 }
 
 .hero-content h2, .hero-cont2 h2 {
-    color: var(--tertiary-color);
-    transition: var(--transition);
-    font-family: "Tektur", sans-serif;
-    font-size: clamp(3rem, 4vw, 5rem);
-}
-
-.hero-content p, .hero-cont2 p {
     color: var(--neutra-color);
-    font-weight: 900;
+    font-weight: 650;
     transition: var(--transition);
-    margin-bottom: 1vw;
+    margin-bottom: 2vw;
     font-size: clamp(2rem, 3vw, 4rem);
-    font-family: "Tektur", sans-serif;
 }
 
 .hero-content a {
     color: #fff;
-    font-family: "Tektur", sans-serif;
 }
 
 .bnt, .bnt-rosa {
@@ -142,7 +214,6 @@ a:focus, button:focus {
     text-decoration: none;
     transition: var(--transition);
     font-size: clamp(1rem, 2vw, 2rem);
-    font-family: "Tektur", sans-serif;
     font-weight: 500;
     color: #fff;
 }
@@ -165,7 +236,7 @@ a:focus, button:focus {
 .about {
     width: 100%;
     min-height: 80vh;
-    background: url(../img/about-img.jpg) center/cover no-repeat;
+    background-color:#180d32; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,6 +259,9 @@ a:focus, button:focus {
     padding: 2vw;
     overflow: hidden;
 }
+.text-about p {
+    font-size: 1.2vw;
+}
 
 /* Games Destaques */
 .title-game {
@@ -195,7 +269,6 @@ a:focus, button:focus {
     margin-top: 5vw;
     color: var(--second-neutral-color);
     font-size: 4vw;
-    font-family: "Tektur", sans-serif;
 }
 /* Games */
 .title-game2 {
@@ -211,7 +284,6 @@ a:focus, button:focus {
     margin-bottom: 5vw;
     text-align: center;
     font-size: 2vw;
-    font-family: "Tektur", sans-serif;
 }
 
 .content-card-games-destaques, .content-card-games {
@@ -247,53 +319,52 @@ a:focus, button:focus {
     border-radius: 5px;
 }
 
-.h3card {
-    margin: 2vw 0;
+.card-itens h3 {
+    margin-top: 1vw;
     font-weight: 800;
     font-size: 3vw;
     font-family: "Tektur", sans-serif;
 }
-.pcard {
-    margin: 2vw 0;
+.card-itens p {
     font-size: 2vw;
     font-family: "Tektur", sans-serif;
 }
-/* Games */
-.title-game2 {
-    text-align: center;
-    margin-top: 5vw;
-    margin-bottom: 5vw;
-    color: var(--second-neutral-color);
-    font-size: 4vw;
-    font-family: "Tektur", sans-serif;
-}
+
+
 
 /* Acessibilidade */
 .content-acessibilidade {
     width: 100%;
     height: 80vh;
-    background: url(../img/acessibilidade.jpg) 10% center/cover no-repeat;
+    background-image: linear-gradient(rgba(4, 9, 30, .3), rgba(9, 2, 16, 0.9)), url(../img/acessibilidade-banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .acessibilidade {
-    margin: 5vw;
-    width: 30%;
+    align-content: center;
+    margin-left: 2vw;
+}
+
+.acessibilidade h1 {
+    color: var(--tertiary-color);
+    transition: var(--transition);
+    font-size: clamp(3rem, 4vw, 5rem);
+    font-weight: 700;
 }
 
 .acessibilidade h2 {
-    color: var(--primary-color);
-    font-size: clamp(2rem, 3vw, 6rem);
+    color: var(--neutra-color);
+    font-weight: 500;
+    transition: var(--transition);
+    margin-bottom: 2vw;
+    font-size: clamp(2rem, 3vw, 4rem);
 }
 
-.acessibilidade p {
-    color: var(--neutra-color);
-    font-weight: 900;
-    margin-bottom: 2vw;
-    font-size: clamp(1.5rem, 2vw, 3rem);
-}
+/* game */
+
 .card-itens2{
     margin-bottom: 1vw;
     width: 25%;
@@ -308,6 +379,18 @@ a:focus, button:focus {
     border-radius: 5px;
     transition: var(--transition);
 }
+
+.card-itens2 h3{
+    margin-top: 1vw;
+    font-weight: 800;
+    font-size: 3vw;
+    font-family: "Tektur", sans-serif;
+}
+.card-itens2 p{
+    font-size: 2vw;
+    font-family: "Tektur", sans-serif;
+}
+
 /* Footer */
 .rodape {
     width: 100%;
@@ -351,22 +434,40 @@ a:focus, button:focus {
 .hero2 {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(rgba(4, 9, 30, .3), rgba(18, 4, 30, 0.9)), url(../img/hero-2.jpg) center/cover no-repeat;
-    display: flex;
-    flex-direction: column;  
+    background-image: linear-gradient(rgba(4, 9, 30, .3), rgba(18, 4, 30, 0.9)), url(../img/banner2.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
     transition: 2s;
+    display: flex;
+
 }
 
-.hero-cont2 {
-    padding: 17rem 3rem;
-    align-items: center;
+.hero2-content {
+    align-content: center;
+    margin-left: 2vw;
 }
 
+.hero2-content h1, .hero2-cont2 h1 {
+    color: var(--tertiary-color);
+    transition: var(--transition);
+    font-size: clamp(3rem, 4vw, 5rem);
+    font-weight: 800;
+}
+
+.hero2-content h2, .hero2-cont2 h2 {
+    color: var(--neutra-color);
+    font-weight: 650;
+    transition: var(--transition);
+    margin-bottom: 2vw;
+    font-size: clamp(2rem, 3vw, 4rem);
+}
+
+.hero-content a {
+    color: #fff;
+}
 .conteudo {
     display: flex;
-}
-.conteudo p {
-    margin-left: 5vw;
 }
 
 .content-texto, .content-img {
@@ -379,10 +480,20 @@ a:focus, button:focus {
     align-items: center;
 }
 
+.content-texto h1{
+    font-size: 3vw;
+    margin: 1vw;
+}
+.content-texto p{
+    text-align: center;
+    font-size: 1.4vw;
+    margin: 2vw;
+}
+
 .img {
-    height: 80%;
+    height: 60%;
     width: 70%;
-    background: url(../img/about-img.jpg) center/cover no-repeat;
+    background: url(../img/folclore.png) center/cover no-repeat;
     border-radius: 20px;
     box-shadow: 1px 1px 30px #718d25;
 }
